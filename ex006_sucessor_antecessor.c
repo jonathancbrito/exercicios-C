@@ -8,5 +8,5 @@ void main() {
     scanf("%d", &num);
     suces = num+1;
     antec = num-1;
-    printf("\nO sucessor de %d é %d e seu antecessor é %d", num, suces, antec);
+    printf("\nO sucessor de %d é %d e seu antecessor é %d", num, suces, antec);  // ou (num+1), (num-1)
 }
