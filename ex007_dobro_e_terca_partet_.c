@@ -8,6 +8,6 @@ void main() {
     printf("Digite um número: ");
     scanf("%i", &num);
     dobro = 2*num;
-    terpt = (float)num/3; // (float)num para divisão real
+    terpt = (float)num/3; // (float)num para divisão real | coerção | 
      printf("\nAnalisando o número %d, seu dobro é %d e a terça parte é %.2f.", num, dobro, terpt);
 }
