@@ -7,14 +7,14 @@ void main () {
     printf("===== TABELA DE PREÇOS =====\n\n");
     printf("Viagens até 200 Km \t R$0.50/Km\nA partir de 200 Km \t R$0.35/Km");
     printf("\n--------------------------------");
-    printf("\nDigite a distância a ser percorrida: ");
+    printf("\nDigite a distância a ser percorrida em Km: ");
     fflush(stdin);
     scanf("%d", &dist);
      if(dist <= 200) {
-         printf("Valor total da vigem: R$%.2f", dist*0.5);
+         printf("Valor total de viagem de %i Km: R$%.2f", dist*0.5);
      } else {
          if (dist > 200) {
-             printf("Valor total da vigem: R$%.2f", dist*0.35);
+             printf("Valor total da viagem: R$%.2f", dist*0.35);
          }
      }
 
