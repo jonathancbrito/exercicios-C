@@ -3,58 +3,58 @@
 
 int main () {
     setlocale(LC_ALL, "Portuguese");
-    printf("Me diga dois números e eu colocarei os dois em ordem crescente.\n\n");
+    printf("Me diga dois nï¿½meros e eu colocarei os dois em ordem crescente.\n\n");
     int n1, n2, n3;
-    printf("Primero número: ");
+    printf("Primero nï¿½mero: ");
     fflush(stdin);
     scanf("%i", &n1);
-    printf("\nSegundo número: ");
+    printf("\nSegundo nï¿½mero: ");
     fflush(stdin);
     scanf("%i", &n2);
-    printf("\nTerceiro número: ");
+    printf("\nTerceiro nï¿½mero: ");
     fflush(stdin);
     scanf("%i", &n3);
 
     if (n1<n2 && n1<n3 && n2<n3){
-        printf("Os números em ordem são %i , %i e %i", n1, n2, n3); // ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n1, n2, n3); 
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n3);
-        printf("\nINTERMEDIÁRIO: %i", n2);
+        printf("\nINTERMEDIï¿½RIO: %i", n2);
         printf("\nMENOR: %i", n1);
 
     } else if (n1<n2 && n1<n3 && n2>n3) {
-        printf("Os números em ordem são %i , %i e %i", n1, n3, n2); //ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n1, n3, n2); 
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n2);
-        printf("\nINTERMEDIÁRIO: %i", n3);
+        printf("\nINTERMEDIï¿½RIO: %i", n3);
         printf("\nMENOR: %i", n1);
 
     }  else if (n2<n1 && n1<n3 && n2<n3) {
-        printf("Os números em ordem são %i , %i e %i", n2, n1, n3); //ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n2, n1, n3);
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n3);
-        printf("\nINTERMEDIÁRIO: %i", n1);
+        printf("\nINTERMEDIï¿½RIO: %i", n1);
         printf("\nMENOR: %i", n2);
 
     }  else if (n2<n3 && n2<n1 && n1>n3) {
-        printf("Os números em ordem são %i , %i e %i", n2, n3, n1); // ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n2, n3, n1);
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n1);
-        printf("\nINTERMEDIÁRIO: %i", n3);
+        printf("\nINTERMEDIï¿½RIO: %i", n3);
         printf("\nMENOR: %i", n2);
 
     }  else if (n3<n1 && n3<n2 && n2>n1) {
-        printf("Os números em ordem são %i , %i e %i", n3, n1, n2); //ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n3, n1, n2);
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n2);
-        printf("\nINTERMEDIÁRIO: %i", n1);
+        printf("\nINTERMEDIï¿½RIO: %i", n1);
         printf("\nMENOR: %i", n3);
 
     }  else if (n3<n2 && n3<n1 && n2<n1) {
-        printf("Os números em ordem são %i , %i e %i", n3, n2, n1); // ok
+        printf("Os nï¿½meros em ordem sï¿½o %i , %i e %i", n3, n2, n1);
         printf("\n-------------------------\n");
         printf("MAIOR: %i", n1);
-        printf("\nINTERMEDIÁRIO: %i", n2);
+        printf("\nINTERMEDIï¿½RIO: %i", n2);
         printf("\nMENOR: %i", n3);
     }
 
