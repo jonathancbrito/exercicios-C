@@ -3,48 +3,49 @@
 
 void main() {
     setlocale(LC_ALL, "Portuguese");
-    printf("<<< EX030 - Preço por Época >>>\n\n");
+    printf("<<< EX030 - Preï¿½o por ï¿½poca >>>\n\n");
     float precop;
     int opcao;
-    printf("Digite o preço do produto R$");
+    printf("Digite o preï¿½o do produto R$");
     fflush(stdin);
     scanf("%f", &precop);
-    printf("\n\t ESCOLHA UM PERÍODO");
+    printf("\n\t ESCOLHA UM PERï¿½ODO");
     printf("\n    ==========================");
     printf("\n\t1     Carnaval [+10]");
-    printf("\n\t2     Férias Escolares [+20]");
-    printf("\n\t3     Dia das Crianças [+5]");
+    printf("\n\t2     Fï¿½rias Escolares [+20]");
+    printf("\n\t3     Dia das Crianï¿½as [+5]");
     printf("\n\t4     Black Friday [-30]");
     printf("\n\t5     Natal [-5]");
     printf("\n    ==========================\n");
-    printf("\tDigite sua opção => ");
+    printf("\tDigite sua opï¿½ï¿½o => ");
     fflush(stdin);
     scanf("%i", &opcao);
 
     printf("\n----------------------------------------------------");
+    
     switch (opcao) {
         case 1:
-           printf("\nNa época de CARNAVAL, o preço vai para R$%.2f", precop+precop*0.1);
+           printf("\nNa ï¿½poca de CARNAVAL, o preï¿½o vai para R$%.2f", precop+precop*0.1);
            break;
 
         case 2:
-           printf("\nNa época de FÉRIAS, o preço vai para R$%.2f", precop+precop*0.2);
+           printf("\nNa ï¿½poca de Fï¿½RIAS, o preï¿½o vai para R$%.2f", precop+precop*0.2);
            break;
 
         case 3:
-           printf("\nNa época de DIA DAS CRIANÇAS, o preço vai para R$%.2f", precop+precop*0.05);
+           printf("\nNa ï¿½poca de DIA DAS CRIANï¿½AS, o preï¿½o vai para R$%.2f", precop+precop*0.05);
            break;
 
         case 4:
-           printf("\nNa época de BLACK FRIDAY, o preço vai para R$%.2f", precop-precop*0.3);
+           printf("\nNa ï¿½poca de BLACK FRIDAY, o preï¿½o vai para R$%.2f", precop-precop*0.3);
            break;
         case 5:
-          printf("\nNa época de NATAL, o preço vai para R$%.2f", precop-precop*0.05);
+          printf("\nNa ï¿½poca de NATAL, o preï¿½o vai para R$%.2f", precop-precop*0.05);
            break;
 
         default:
-            printf("\n[404] Época não encontrada. Tente novamente");
-            break; // útltimo break; opcional
+            printf("\n[404] ï¿½poca nï¿½o encontrada. Tente novamente");
+            break; // ï¿½tltimo break; opcional
     }
     printf("\n----------------------------------------------------");
     printf("\nVOLTE SEMPRE");
