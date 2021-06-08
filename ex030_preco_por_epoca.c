@@ -46,6 +46,7 @@ void main() {
         default:
             printf("\n[404] �poca n�o encontrada. Tente novamente");
             break; // �tltimo break; opcional
+
     }
     printf("\n----------------------------------------------------");
     printf("\nVOLTE SEMPRE");
