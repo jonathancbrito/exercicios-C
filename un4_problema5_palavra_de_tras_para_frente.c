@@ -10,7 +10,8 @@ void main() {
     printf("Digite uma palavra: ");
     gets(palavra);
     tam = strlen(palavra);
-
+    
+  // escreve a palavra digitada ao contrário
     for (i = tam-1; i >= 0; i--) {
         printf("%c", palavra[i]);
     }
