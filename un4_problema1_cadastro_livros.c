@@ -3,7 +3,7 @@
 #include <locale.h>
 #include <string.h>
 
-#define TAM 3
+#define TAM 20
 
 // registro para cadastro dos livros
 struct livros {
@@ -21,7 +21,7 @@ int main() {
     option = 0;
     while(option != 5) {
         // Menu
-        printf("-----------------------------------------\n");
+        printf("\n-----------------------------------------\n");
         printf("      <<< CADASTRO DE LIVROS >>>\n");
         printf("-----------------------------------------\n\n");
         printf("Escolha uma opção abaixo:\n");
@@ -92,7 +92,9 @@ int main() {
                 } else if (acha != 1){
                      printf("\nRegistro não encontrado!.");
 
-                } else if (option == 4) {
+                } 
+            } 
+        } else if (option == 4) {
                     system("cls");
                     for (i=0;i<TAM-1;i++) {
                         for (j=1;j<TAM;j++){
@@ -107,8 +109,6 @@ int main() {
                 } for (i=0;i<TAM;i++){
                     printf("\nCÓDIGO: %d, TÍTULO: %s, ANO: %d", info[i].codigo, info[i].titulo, info[i].ano);
                 }
-            } 
-        }  
     }
     return (0);
 
