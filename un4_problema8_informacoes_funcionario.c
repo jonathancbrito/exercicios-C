@@ -19,7 +19,7 @@ int main() {
     char op;
 
     for (i=0;i<nFUN;i++){
-        printf("Digite a matrícula do funcionário: ");
+        printf("Digite a matrï¿½cula do funcionï¿½rio: ");
         fflush(stdin);
         scanf("%d", &dados[i].matricula);
 
@@ -31,7 +31,7 @@ int main() {
         fflush(stdin);
         gets(dados[i].setor);
 
-        printf("Digite o salário: ");
+        printf("Digite o salï¿½rio: ");
         fflush(stdin);
         scanf("%f", &dados[i].salario);
     } 
@@ -42,7 +42,7 @@ int main() {
         } while ((op != 'S') && (op != 's') && (op != 'n') && (op != 'N'));
 
         while ((op == 's') || (op == 'S')){
-            printf("Informe a matrícula que deseja buscar: ");
+            printf("Informe a matrï¿½cula que deseja buscar: ");
             fflush(stdin);
             scanf("%d", &busca);
             i = 0;
@@ -54,10 +54,10 @@ int main() {
                     i++;
                 }
                 if (acha == 1) {
-                    printf("O setor é: %s\n", dados[i].setor);
-                    printf("O salário é: %.2f\n", dados[i].salario);
+                    printf("O setor ï¿½: %s\n", dados[i].setor);
+                    printf("O salï¿½rio ï¿½: %.2f\n", dados[i].salario);
                 } else {
-                    printf("Matrícula não cadastrada!\n");
+                    printf("Matrï¿½cula nï¿½o cadastrada!\n");
                 }
 
                 do {
