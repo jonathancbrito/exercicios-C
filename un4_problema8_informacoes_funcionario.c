@@ -3,7 +3,7 @@
 #include <string.h>
 #include <locale.h>
 
-#define nFUN 2
+#define nFUN 20 // número de funcionários para cadastrar
 
 struct funcionarios {
     int matricula;
