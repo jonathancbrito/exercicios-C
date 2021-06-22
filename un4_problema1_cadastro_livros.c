@@ -3,7 +3,7 @@
 #include <locale.h>
 #include <string.h>
 
-#define TAM 20
+#define TAM 5
 
 // registro para cadastro dos livros
 struct livros {
